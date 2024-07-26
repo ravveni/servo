@@ -8,23 +8,26 @@ aa    ]8I  "8b,   ,aa  88            `8b,d8'    "8a,   ,a8"
 the perfect tool for multi-device ux/ui testing over LAN
 ```
 
-## compile and link
+## Pre-Requirements
+- [Go 1.22.5+](https://go.dev/doc/install)
+
+## Compile and Link
 ```
 $ go build
 ```
-create a symlink from the executable to your PATH for use system-wide
+Create a symlink from the executable to your PATH for use system-wide
 ```
 $ sudo ln -s absolute/path/to/servo /usr/local/bin/servo
 ```
 
-## usage
-### basic
-serves current working directory on 8080
+## Usage
+### Basic
+Serves current working directory on 8080
 ```
 $ servo
 ```
-### custom
-on specific port
+### Custom
+On specific port
 ```
 $ servo [PORT]
 ```
